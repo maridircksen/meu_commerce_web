@@ -5,15 +5,19 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.nav-item a{
+
+.navbar-brand{
+    color: #106184;
+}
+
+.nav-item{
+    float:left;
+    padding:5px 10px;
     color: black;
     font-family:Arial, Helvetica, sans-serif;
 }
-.navbar-brand{
-    color: #106184;
-    
 
-}
+
 .form-control{
     border-color: grey;
     outline-color: grey;
@@ -26,11 +30,10 @@
 }
   
 .menu{
-  list-style:none;
-  border:1px solid #106184;
-  border-radius: 20px;
+  list-style:none; 
   float:left;
-  margin-left:20px;
+  margin-top: 8px;
+  margin-left:10px;
   padding:5px 10px;
 
 }
