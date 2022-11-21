@@ -91,6 +91,9 @@ footer{
     height: 100px;    
 }
 
+#github :hover{
+    color:red;
+}
 
 
 /* Barra de Rolagem */
