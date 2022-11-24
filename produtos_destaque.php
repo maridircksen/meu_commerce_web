@@ -1,4 +1,4 @@
-<h3>Produtos em Destaque</h3>
+<h3 style =" font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: center; color:#106184; font-weight: bold">Produtos em Destaque</h3>
 
 <?php if (isset($_GET['categoria'])) {
     $sql_produtos_destaque = '
@@ -22,14 +22,14 @@
 } ?>
 <div class="row">
     <?php while ($produto = $sql_produtos_destaque->fetch()) { ?>
-    <div class="card" style="width: 18rem;">
-        <img src="imagens/<?php echo $produto['imagem']; ?>" class="card-img-top" alt="<?php echo $produto[
+    <div class="card" style="width: auto; margin-left: 25%; margin-top: 50px">
+    <img src="https://i.zst.com.br/thumbs/12/3b/b/-709050601.jpg" class="card-img-top" style="margin-top:20px; width: 18rem;"><?php echo $produto[
     'descricao'
-]; ?>">
-        <div class="card-body">
-            <h5 class="card-title"><?php echo $produto['descricao']; ?></h5>
-            <p class="card-text"><?php echo $produto['resumo']; ?></p>
-            <a href="?pagina=produto&id=<?php echo $produto['id']; ?>" class="btn btn-primary">Detalhes</a>
+    ]; ?>
+        <div class="card-body" style="text-align: center;">
+            <h5 class="card-title" style="text-align: justify;"><?php echo $produto['descricao']; ?></h5>
+            <p class="card-text" style="text-align: justify;"><?php echo $produto['resumo']; ?></p>
+            <a href="?pagina=produto&id=<?php echo $produto['id']; ?>" class="btn btn-outline-dark" >Saber Mais Detalhes</a>
         </div>
     </div>
     <?php } ?>

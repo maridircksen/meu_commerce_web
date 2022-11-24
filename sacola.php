@@ -1,11 +1,11 @@
 <?php
 if (isset($_SESSION['sacola'])) { ?>
-<form method="post">
-    <input class="btn btn-danger" type="submit" name="limpar_sacola" value="Limpar sacola">
+<form method="post" style = 'margin-left: 20px;'>
+    <input class="btn btn-warning" type="submit" name="limpar_sacola" value="Limpar sacola">
 </form>
-<hr>
-<table class="table table-striped">
-    <thead>
+<hr style = 'margin-left: 20px;'>
+<table class="table table-striped" style = 'margin-left: 20px;'>
+    <thead style = 'margin-left: 20px;'>
         <tr>
             <th scope="col">#</th>
             <th scope="col">Descricao</th>
@@ -31,7 +31,7 @@ if (isset($_SESSION['sacola'])) { ?>
             <td>
                 <form method="POST">
                     <input type="hidden" name="produto" value="<?php echo $item; ?>">
-                    <input class="btn btn-danger" type="submit" name="remover_sacola" value="Remover">
+                    <input class="btn btn-outline-danger" type="submit" name="remover_sacola" value="Remover">
                 </form>
             </td>
         </tr>
@@ -42,8 +42,8 @@ if (isset($_SESSION['sacola'])) { ?>
     </tbody>
 </table>
 
-<a class="btn btn-primary" href="?pagina=realizar_pedido">Realizar pedido</a>
+<a class="btn btn-success" style = 'margin-left: 20px;' href="?pagina=realizar_pedido">Realizar pedido</a>
 
 
-<?php } else {echo '<h3>Nenhum produto adicinado a sacola!';}
+<?php } else {echo '<h3 style = "margin-left:20px; color:#106184">Nenhum produto adicinado ao carrinho!';}
 ?>
