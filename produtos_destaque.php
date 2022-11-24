@@ -1,4 +1,5 @@
-<h3 style =" font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: center; color:#106184; font-weight: bold">Produtos em Destaque</h3>
+<h3 style =" font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: center; color:#106184; 
+font-weight: bold">Produtos em Destaque</h3>
 
 <?php if (isset($_GET['categoria'])) {
     $sql_produtos_destaque = '

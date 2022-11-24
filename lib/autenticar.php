@@ -15,7 +15,7 @@ if (isset($_POST['autenticar']) & !empty($_POST['login']) & !empty($_POST['senha
             //header('Location: ?');
         }
     } else {
-        echo 'Usuário encontrado';
+        echo '<a >Usuário encontrado</a>';
     }
 }
 ?>
